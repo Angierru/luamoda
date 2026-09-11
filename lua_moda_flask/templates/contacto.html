@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+
+{% block contenido %}
+
+
+<div class="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>
+        Déjanos un mensaje.
+    </p>
+
+
+    <form method="POST">
+
+
+        <label>
+            Nombre
+        </label>
+
+        <input
+            type="text"
+            name="nombre"
+            required
+        >
+
+
+        <label>
+            Correo
+        </label>
+
+        <input
+            type="email"
+            name="correo"
+            required
+        >
+
+
+        <label>
+            Mensaje
+        </label>
+
+        <textarea
+            name="mensaje"
+            required
+        ></textarea>
+
+
+        <button type="submit">
+            Enviar
+        </button>
+
+
+    </form>
+
+</div>
+
+
+{% endblock %}

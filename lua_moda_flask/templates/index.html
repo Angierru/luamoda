@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+
+<section class="inicio">
+
+    <h2>Bienvenidos a LUA Moda</h2>
+
+    <p>
+        Moda sencilla, moderna y para todos los estilos.
+    </p>
+
+    <a href="/productos" class="boton">
+        Ver productos
+    </a>
+
+</section>
+
+
+<h2 class="titulo">
+    Productos destacados
+</h2>
+
+
+<div class="productos">
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/blusa.jfif') }}">
+
+        <h3>Blusa Rosa</h3>
+
+        <p>Blusa moderna para mujer.</p>
+
+        <strong>$50.000</strong>
+
+    </div>
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/jean.webp') }}">
+
+        <h3>Jean Azul</h3>
+
+        <p>Jean clásico para cualquier ocasión.</p>
+
+        <strong>$90.000</strong>
+
+    </div>
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/camisa.webp') }}">
+
+        <h3>Camisa Blanca</h3>
+
+        <p>Camisa cómoda y sencilla.</p>
+
+        <strong>$60.000</strong>
+
+    </div>
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/chaqueta.webp') }}">
+
+        <h3>Chaqueta Negra</h3>
+
+        <p>Chaqueta moderna y versátil.</p>
+
+        <strong>$120.000</strong>
+
+    </div>
+
+
+</div>
+
+{% endblock %}

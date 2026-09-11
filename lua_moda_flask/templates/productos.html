@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+
+{% block contenido %}
+
+
+<h2 class="titulo">
+    Nuestros productos
+</h2>
+
+
+<div class="productos">
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/blusa.jfif') }}">
+
+        <h3>Blusa Rosa</h3>
+
+        <p>Mujer</p>
+
+        <p>Blusa moderna y cómoda.</p>
+
+        <strong>$50.000</strong>
+
+    </div>
+
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/jean.webp') }}">
+
+        <h3>Jean Azul</h3>
+
+        <p>Mujer</p>
+
+        <p>Jean azul clásico.</p>
+
+        <strong>$90.000</strong>
+
+    </div>
+
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/camisa.webp') }}">
+
+        <h3>Camisa Blanca</h3>
+
+        <p>Hombre</p>
+
+        <p>Camisa casual.</p>
+
+        <strong>$60.000</strong>
+
+    </div>
+
+
+
+    <div class="producto">
+
+        <img src="{{ url_for('static', filename='img/chaqueta.webp') }}">
+
+        <h3>Chaqueta Negra</h3>
+
+        <p>Unisex</p>
+
+        <p>Chaqueta moderna.</p>
+
+        <strong>$120.000</strong>
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}
